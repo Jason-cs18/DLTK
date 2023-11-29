@@ -42,6 +42,8 @@ This guide offers an in-depth introduction to deep learning toolkits, including 
 ## Vision Transformer
  Inspired by the success of Transformers [[1](#references)] in natural language processing (NLP), Vision Transformer [[2](#references)] was proposed by Google in 2020 to revolutionize computer vision tasks such as image classification, object detection, and semantic segmentation. Similar to text tokens, Vision Transformer tokenizes images through patch encoding and performs multi-head self-attention on the image patches. Unlike convolution neural networks (CNNs), Vision Transformers learn global representations of the image patches through self-attention and achieve a large receptive field, making them highly effective in computer vision tasks.
 
+ In experiments, we start with an pre-trained Vision Transformer and fine-tune it on the [Grocery Store Dataset](https://github.com/marcusklasson/GroceryStoreDataset).
+
 |Transformer|Vision Transformer|
 |:---:|:---:|
 |![](https://camo.githubusercontent.com/022f6ad1b0745d754a8c6cb474a8bd458b0de4d028558607456387a347b78d80/68747470733a2f2f64326c2e61692f5f696d616765732f7472616e73666f726d65722e737667)|![](https://camo.githubusercontent.com/5c9e02651b64a9113981be3d72942564778bee4b86a5211ad59d452da8f30a1f/68747470733a2f2f64326c2e61692f5f696d616765732f7669742e737667)|
@@ -105,3 +107,4 @@ This guide offers an in-depth introduction to deep learning toolkits, including 
 ## References
 1. [NeurIPS'17] [Attention Is All You Need](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) | Google Brain, Google Research, University of Toronto.
 2. [ICLR'21] [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://openreview.net/pdf?id=YicbFdNTTy) | Google Research, Google Brain.
+3. deep-learning-project-template https://github.com/Lightning-AI/deep-learning-project-template
