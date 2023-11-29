@@ -1,6 +1,8 @@
 # DLTK
 This guide offers an in-depth introduction to deep learning toolkits, including model design and deployment, through a practical image classification example using Vision Transformer.
 
+![](https://github.com/Jason-cs18/DLTK/blob/main/imgs/dlsys_outline.png)
+
 ## Table of Contents
 - [DLTK](#dltk)
   - [Table of Contents](#table-of-contents)
@@ -99,4 +101,5 @@ This guide offers an in-depth introduction to deep learning toolkits, including 
 ### Performance Monitoring
 
 ## References
-1. 
+1. [NeurIPS'17] [Attention Is All You Need](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) | Google Brain, Google Research, University of Toronto.
+2. [ICLR'21] [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://openreview.net/pdf?id=YicbFdNTTy) | Google Research, Google Brain.
