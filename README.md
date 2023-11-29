@@ -1,5 +1,5 @@
 # DLTK
-This guide offers an in-depth introduction to deep learning toolkits, including model design and deployment, through a practical image classification example using Vision Transformer.
+In this comprehensive guide, we provide an extensive overview of deep learning toolkits, covering model design and deployment, with practical examples of image classification, object detection, semantic segmentation, and text-to-image synthesis. This guide is perfect for beginners and experts alike looking to gain a deeper understanding of the various applications of deep learning in machine learning.
 
 <p align="center">
   <img src="https://github.com/Jason-cs18/DLTK/blob/main/imgs/dlsys_outline.png" />
@@ -20,11 +20,13 @@ This guide offers an in-depth introduction to deep learning toolkits, including 
     - [Evaluate the Pre-Trained Vision Transformer on New Images](#evaluate-the-pre-trained-vision-transformer-on-new-images-1)
     - [Accelerate the Inference of Vision Transformer](#accelerate-the-inference-of-vision-transformer-1)
   - [Model Design via HuggingFace](#model-design-via-huggingface)
-    - [Fine-tune Vision Transformer on Custom Dataset](#fine-tune-vision-transformer-on-custom-dataset-2)
-    - [Experiment Tracking with W\&B](#experiment-tracking-with-wb-2)
-    - [Evaluate the Pre-Trained Vision Transformer on New Images](#evaluate-the-pre-trained-vision-transformer-on-new-images-2)
-    - [Accelerate the Inference of Vision Transformer](#accelerate-the-inference-of-vision-transformer-2)
+    - [Image Classification with Vision Transformer](#image-classification-with-vision-transformer)
+    - [Object Detection with DETR](#object-detection-with-detr)
+    - [Image Segmentation with SegFormer](#image-segmentation-with-segformer)
   - [Web Demo via Gradio](#web-demo-via-gradio)
+    - [Image Classification](#image-classification)
+    - [Object Detection](#object-detection)
+    - [Image Segmentation](#image-segmentation)
   - [Model Deployment with NVIDIA Triton](#model-deployment-with-nvidia-triton)
     - [Model Conversion](#model-conversion)
     - [Model Optimization](#model-optimization)
@@ -70,15 +72,19 @@ This guide offers an in-depth introduction to deep learning toolkits, including 
 
 ## Model Design via HuggingFace
 
-### Fine-tune Vision Transformer on Custom Dataset
+### Image Classification with Vision Transformer
 
-### Experiment Tracking with W&B
+### Object Detection with DETR
 
-### Evaluate the Pre-Trained Vision Transformer on New Images
-
-### Accelerate the Inference of Vision Transformer
+### Image Segmentation with SegFormer
 
 ## Web Demo via Gradio
+
+### Image Classification
+
+### Object Detection
+
+### Image Segmentation
 
 ## Model Deployment with NVIDIA Triton
 
