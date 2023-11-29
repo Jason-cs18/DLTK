@@ -2,7 +2,7 @@
 This guide offers an in-depth introduction to deep learning toolkits, including model design and deployment, through a practical image classification example using Vision Transformer.
 
 <p align="center">
-  <img src="[http://some_place.com/image.png](https://github.com/Jason-cs18/DLTK/blob/main/imgs/dlsys_outline.png)" />
+  <img src="https://github.com/Jason-cs18/DLTK/blob/main/imgs/dlsys_outline.png" />
 </p>
 
 ## Table of Contents
