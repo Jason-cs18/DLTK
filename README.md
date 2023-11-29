@@ -89,6 +89,7 @@ This guide offers an in-depth introduction to deep learning toolkits, including 
 ### Performance Monitoring
 
 ## Model Deployment with Anyscale Ray
+Compared with NVIDIA Triton, Ray supports more featues like distributed data processing, distributed training, scalable reinforcement learning.
 
 ### Model Conversion
 
