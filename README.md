@@ -89,7 +89,7 @@ This guide offers an in-depth introduction to deep learning toolkits, including 
 ### Performance Monitoring
 
 ## Model Deployment with Anyscale Ray
-Compared with NVIDIA Triton, Ray supports more featues like distributed data processing, distributed training, scalable reinforcement learning.
+Compared with [NVIDIA Triton](#references), [Ray](#references) supports more useful featues like distributed data processing, distributed training, scalable reinforcement learning.
 
 ### Model Conversion
 
@@ -109,3 +109,5 @@ Compared with NVIDIA Triton, Ray supports more featues like distributed data pro
 1. [NeurIPS'17] [Attention Is All You Need](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) | Google Brain, Google Research, University of Toronto.
 2. [ICLR'21] [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://openreview.net/pdf?id=YicbFdNTTy) | Google Research, Google Brain.
 3. deep-learning-project-template https://github.com/Lightning-AI/deep-learning-project-template
+4. Anyscale Ray https://github.com/ray-project/ray
+5. NVIDIA Triton Inference Server https://github.com/triton-inference-server/server
