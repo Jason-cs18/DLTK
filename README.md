@@ -23,12 +23,14 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
     - [Image Classification with Vision Transformer](#image-classification-with-vision-transformer)
     - [Object Detection with DETR](#object-detection-with-detr)
     - [Image Segmentation with SegFormer](#image-segmentation-with-segformer)
+    - [Story Writing with MPT-7B](#story-writing-with-mpt-7b)
     - [Text-to-Image Generation with Stable Diffusion](#text-to-image-generation-with-stable-diffusion)
   - [Web Demo via Gradio](#web-demo-via-gradio)
     - [Image Classification](#image-classification)
     - [Object Detection](#object-detection)
     - [Image Segmentation](#image-segmentation)
     - [Text-to-Image Generation](#text-to-image-generation)
+    - [Story Writer](#story-writer)
   - [Model Deployment with NVIDIA Triton](#model-deployment-with-nvidia-triton)
     - [Model Conversion](#model-conversion)
     - [Model Optimization](#model-optimization)
@@ -80,6 +82,8 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 
 ### Image Segmentation with SegFormer
 
+### Story Writing with MPT-7B
+
 ### Text-to-Image Generation with Stable Diffusion
 
 ## Web Demo via Gradio
@@ -91,6 +95,8 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 ### Image Segmentation
 
 ### Text-to-Image Generation
+
+### Story Writer
 
 ## Model Deployment with NVIDIA Triton
 
