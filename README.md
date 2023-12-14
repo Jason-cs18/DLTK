@@ -9,17 +9,17 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 - [DLTK](#dltk)
   - [Table of Contents](#table-of-contents)
   - [Vision Transformer](#vision-transformer)
-  - [Model Design via Pytorch](#model-design-via-pytorch)
+  - [Model Training via Pytorch](#model-training-via-pytorch)
     - [Fine-tune Vision Transformer on Custom Dataset](#fine-tune-vision-transformer-on-custom-dataset)
     - [Experiment Tracking with W\&B](#experiment-tracking-with-wb)
     - [Evaluate the Pre-Trained Vision Transformer on New Images](#evaluate-the-pre-trained-vision-transformer-on-new-images)
     - [Accelerate the Inference of Vision Transformer](#accelerate-the-inference-of-vision-transformer)
-  - [Model Design via Pytorch-Lightning](#model-design-via-pytorch-lightning)
+  - [Model Training via Pytorch-Lightning](#model-training-via-pytorch-lightning)
     - [Fine-tune Vision Transformer on Custom Dataset](#fine-tune-vision-transformer-on-custom-dataset-1)
     - [Experiment Tracking with W\&B](#experiment-tracking-with-wb-1)
     - [Evaluate the Pre-Trained Vision Transformer on New Images](#evaluate-the-pre-trained-vision-transformer-on-new-images-1)
     - [Accelerate the Inference of Vision Transformer](#accelerate-the-inference-of-vision-transformer-1)
-  - [Model Design via HuggingFace](#model-design-via-huggingface)
+  - [Model Inference via HuggingFace](#model-inference-via-huggingface)
     - [Image Classification with Vision Transformer](#image-classification-with-vision-transformer)
     - [Object Detection with DETR](#object-detection-with-detr)
     - [Image Segmentation with SegFormer](#image-segmentation-with-segformer)
@@ -54,7 +54,7 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 |:---:|:---:|
 |![](https://camo.githubusercontent.com/022f6ad1b0745d754a8c6cb474a8bd458b0de4d028558607456387a347b78d80/68747470733a2f2f64326c2e61692f5f696d616765732f7472616e73666f726d65722e737667)|![](https://camo.githubusercontent.com/5c9e02651b64a9113981be3d72942564778bee4b86a5211ad59d452da8f30a1f/68747470733a2f2f64326c2e61692f5f696d616765732f7669742e737667)|
 
-## Model Design via Pytorch
+## Model Training via Pytorch
 
 ### Fine-tune Vision Transformer on Custom Dataset
 
@@ -64,7 +64,7 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 
 ### Accelerate the Inference of Vision Transformer
 
-## Model Design via Pytorch-Lightning
+## Model Training via Pytorch-Lightning
 
 ### Fine-tune Vision Transformer on Custom Dataset
 
@@ -74,7 +74,7 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 
 ### Accelerate the Inference of Vision Transformer
 
-## Model Design via HuggingFace
+## Model Inference via HuggingFace
 
 ### Image Classification with Vision Transformer
 
