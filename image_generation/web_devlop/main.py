@@ -243,19 +243,36 @@ import cv2
 from predict import predict
 from fastapi.responses import StreamingResponse
 @app.get("/predict", response_class=StreamingResponse)
-def text2img(text_prompt: str, return_pil=False):
+async def text2img(text_prompt: str):
     model_id = "runwayml/stable-diffusion-v1-5"
-    
     img = predict(text_prompt, model_id)
-
-    if return_pil:
-        return img
     
     open_cv_image = np.array(img)
     # Convert RGB to BGR
     cv2img = open_cv_image[:, :, ::-1].copy()
     res, im_png = cv2.imencode(".png", cv2img)
+    print('*'*20)
+    print(f"type: {type(im_png)}")
     return StreamingResponse(io.BytesIO(im_png.tobytes()), media_type="image/png")
+
+
+# --------------------------------------------------------------------------
+# Predictv1 - GET
+# --------------------------------------------------------------------------
+@app.get("/predictv1")
+def text2img_gradio(text_prompt: str):
+    model_id = "runwayml/stable-diffusion-v1-5"
+    img = predict(text_prompt, model_id)
+    # if not postprocessing:
+    return img
+    
+    # open_cv_image = np.array(img)
+    # # Convert RGB to BGR
+    # cv2img = open_cv_image[:, :, ::-1].copy()
+    # res, im_png = cv2.imencode(".png", cv2img)
+    # print('*'*20)
+    # print(f"type: {type(im_png)}")
+    # return StreamingResponse(io.BytesIO(im_png.tobytes()), media_type="image/png")
 
 
 # --------------------------------------------------------------------------
@@ -333,7 +350,8 @@ description = """### Welcome to our text-to-image application (using stable diff
 
 
 def get_image(text_prompt: str):
-    response = text2img(text_prompt, return_pil=True)
+    # print(11111111111)
+    response = text2img_gradio(text_prompt)
     # response = requests.request("GET", url="http://127.0.0.1:8000/predict", data={'text_prompt': text_prompt})
     # req = requests.get(url ="http://127.0.0.1:8000/predict", data={'text_prompt': text_prompt})
     return response
