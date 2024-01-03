@@ -61,3 +61,6 @@ pip install -r requirements.txt
    1. `cd ./web_develop`
    2. `uvicorn main:app --reload`
    3. API documentation: `http://127.0.0.1:8000/docs`
+
+## Web application demo
+![web_demo](./docs/web_demo.gif)
