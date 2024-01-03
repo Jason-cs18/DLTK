@@ -63,4 +63,4 @@ pip install -r requirements.txt
    3. API documentation: `http://127.0.0.1:8000/docs`
 
 ## Web application demo
-![web_demo](./docs/web_demo.gif)
+![web_demo](https://github.com/Jason-cs18/DLTK/blob/main/imgs/text2img.gif)
