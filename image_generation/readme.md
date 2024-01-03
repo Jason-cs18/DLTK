@@ -33,7 +33,7 @@ pip install -r requirements.txt
 │   │   └── [ 951]  run_web.ipynb
 │   ├── [1.9K]  readme.md
 │   ├── [5.4K]  requirements.txt
-│   └── [4.0K]  web_devlop
+│   └── [4.0K]  web_develop
 │       ├── [4.0K]  flagged
 │       ├── [ 12K]  main.py
 │       ├── [1.8K]  predict.py
