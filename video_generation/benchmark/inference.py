@@ -50,8 +50,9 @@ def infer_pytorch(text_prompt: str, accelerate=False) -> str:
     print("*"*20)
     if accelerate: #TBD
         pass
-    pipe = DiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16, variant="fp16")
-    pipe = pipe.to("cuda")
+    else:
+        pipe = DiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16, variant="fp16")
+        pipe = pipe.to("cuda")
 
     #prompt = "Spiderman is surfing"
     video_frames = pipe(text_prompt).frames

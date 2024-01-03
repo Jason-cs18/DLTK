@@ -7,5 +7,5 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 
 ## Applications
 - [x] Text-to-image Synthesis `./image_generation`
-- [ ] Text-to-video Synthesis
+- [x] Text-to-video Synthesis `./video_generation`
 - [ ] Semantic Segmentation
