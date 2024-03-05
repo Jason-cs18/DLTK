@@ -23,7 +23,7 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 - [ ] [Gradio (Web UI)](https://github.com/Jason-cs18/DLTK/blob/main/mlsys_infrasture/Gradio.md)
 - [ ] [HTML/CSS/JaveScript (Web UI)](https://github.com/Jason-cs18/DLTK/blob/main/mlsys_infrasture/HTML_CSS_JS.md)
 - [ ] [FastAPI (Web Serving)](https://github.com/Jason-cs18/DLTK/blob/main/mlsys_infrasture/FastAPI.md)
-- [ ] [SQLModel (Database)](https://github.com/Jason-cs18/DLTK/blob/main/mlsys_infrasture/SQLModel.md)
+- [x] [SQLModel (Database)](https://github.com/Jason-cs18/DLTK/blob/main/mlsys_infrasture/SQLModel.md)
 - [ ] [PyTriton (Inference Server)](https://github.com/Jason-cs18/DLTK/blob/main/mlsys_infrasture/pytriton.md)
 - [ ] [LlamaIndex (RAG Framework)](https://github.com/Jason-cs18/DLTK/blob/main/mlsys_infrasture/llamaindex.md)
 - [ ] Acceleration
