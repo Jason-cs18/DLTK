@@ -1,8 +1,24 @@
 # Python Programming
 
+- Table of contents
+  - [Typing Hints](#typing-hints)
+  - [Comments](#comments)
+  - [Unit Tests](#unit-tests)
+
+
 ## Typing Hints
 https://fastapi.tiangolo.com/python-types/
 https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
+
+```python
+from typing import Optional
+
+def greeting(name: Optional[str] = None) -> None:
+    if name is not None:
+        print(f"Hello, {name}!")
+    else:
+        print("Hello, Stranger!")
+```
 
 ## Comments
 ```python
