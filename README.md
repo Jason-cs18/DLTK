@@ -12,6 +12,11 @@ In this comprehensive guide, we provide an extensive overview of deep learning t
 
 ## Notes
 
+- Deep Learning Project
+  - [Deep Learning Project Template (Code)](https://github.com/Lightning-AI/deep-learning-project-template)
+  - [ProjectPage Template](https://github.com/eliahuhorwitz/Academic-project-page-template)
+  - [Read the Docs](https://docs.readthedocs.io/en/stable/tutorial/)
+
 - Engineering Tips
   - [x] [Linux Commands](https://github.com/Jason-cs18/DLTK/blob/main/engineering_tips/linux.md)
   - [x] [Virtual Environment for Python](https://github.com/Jason-cs18/DLTK/blob/main/engineering_tips/conda.md)
