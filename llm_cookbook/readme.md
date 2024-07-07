@@ -21,7 +21,9 @@ In this repository, we provide a set of recipes to help you quickly build your o
 ## Overview
 > For Chinese readers, please refer to this [tutorial](https://cloud.tencent.com/developer/article/2315386).
 
-![alt text](image.png)
+<!-- ![alt text](image.png) -->
+
+![alt text](image-1.png)
 
 ## Codebase Selection
 Although a lot of LLMs are released, we only focus on open-source codebases which contain pre-train and fine-tuning scripts.
