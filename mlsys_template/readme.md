@@ -3,8 +3,8 @@ This repository is the official codebase for the [blog](https://jason-cs18.githu
 
 ## Table of contents
 - [ ] Quickstart
-    - [Choose a suitable model for your problem](https://jason-cs18.github.io/ml-engineering/model_selection.html)
-    - [Build a simple interative demo](https://jason-cs18.github.io/ml-engineering/web_demo.html)
+    - [ ] [Choose a suitable model for your problem](https://jason-cs18.github.io/ml-engineering/model_selection.html)
+    - [ ] [Build a simple interative demo](https://jason-cs18.github.io/ml-engineering/web_demo.html)
 - [ ] Dive into model training
 - [ ] Let's make models fast and scale up inference endpoints
 - [ ] Monitor and debug deployed models
@@ -12,10 +12,10 @@ This repository is the official codebase for the [blog](https://jason-cs18.githu
     - [ ] LLM and MLLM
     - [ ] Diffusion and its variants
     - [ ] CLIP and its variants
-- [ ] Engineering Tools
-    - [ ] Web scraper
-    - [ ] FastAPI
-    - [ ] Docker and docker-compose
+- [x] Engineering Tools
+    - [x] [Web scraper](https://jason-cs18.github.io/ml-engineering/web_scraper.html)
+    - [x] [Web development with FastAPI](https://jason-cs18.github.io/ml-engineering/fastapi.html)
+    - [x] [Docker and docker-compose](https://jason-cs18.github.io/ml-engineering/docker.html)
 
 
 ## Setup
