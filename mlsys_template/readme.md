@@ -3,7 +3,7 @@ This repository is the official codebase for the [blog](https://jason-cs18.githu
 
 ## Table of contents
 - [ ] Quickstart ([Code]())
-    - [x] [Choose a suitable model for your problem](https://jason-cs18.github.io/ml-engineering/model_selection.html)
+    - [x] [Find a suitable model for your needs](https://jason-cs18.github.io/ml-engineering/model_selection.html)
     - [ ] [Build a simple interative demo](https://jason-cs18.github.io/ml-engineering/web_demo.html)
 - [ ] Let's train a model on your custom data
 - [ ] Let's make models fast and serve them with multiple requests
