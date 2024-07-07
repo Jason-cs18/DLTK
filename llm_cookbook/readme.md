@@ -78,7 +78,7 @@ Write a response that appropriately completes the request.
 Serving LLMs efficiently employs a lot of popular techniques, such as quantization, KV cache management, and distributed inference. Fortunately, most open-source serving frameworks have supported them. Usually, we choose [vLLM](https://docs.vllm.ai/en/latest/index.html) for throughput-sensitive scenarios and [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) for latency-sensitive scenarios.
 
 ## Make LLMs agent for your applications
-A single LLM only answer our questions but it is hard to complete our tasks. To make LLM userful, we need to teach LLM use tools and external knowledge. It is also refer LLM agents.
+A single LLM only acts as a chatbot and answers user questions. To make LLM userful, we need to teach LLM use tools and external knowledge.
 
 ![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/open-source-llms-as-agents/ReAct.png)
 
