@@ -2,11 +2,11 @@
 This repository is the official codebase for the [blog](https://jason-cs18.github.io/ml-engineering/ml_engineer.html).
 
 ## Table of contents
-- [ ] Quickstart
-    - [ ] [Choose a suitable model for your problem](https://jason-cs18.github.io/ml-engineering/model_selection.html)
+- [ ] Quickstart ([Code]())
+    - [x] [Choose a suitable model for your problem](https://jason-cs18.github.io/ml-engineering/model_selection.html)
     - [ ] [Build a simple interative demo](https://jason-cs18.github.io/ml-engineering/web_demo.html)
-- [ ] Dive into model training
-- [ ] Let's make models fast and scale up inference endpoints
+- [ ] Let's train a model on your custom data
+- [ ] Let's make models fast and serve them with multiple requests
 - [ ] Monitor and debug deployed models
 - [ ] Dive into generative AI
     - [ ] LLM and MLLM
