@@ -25,8 +25,10 @@ In this repository, we provide a set of recipes to help you quickly build your o
 
 ## Codebase Selection
 Although a lot of LLMs are released, we only focus on open-source codebases which contain pre-train and fine-tuning scripts.
-- [litgpt](https://github.com/Lightning-AI/litgpt) ![Github stars](https://img.shields.io/github/stars/Lightning-AI/litgpt.svg) ![Github forks](https://img.shields.io/github/forks/Lightning-AI/litgpt.svg)
+- [litgpt](https://github.com/Lightning-AI/litgpt) ![Github stars](https://img.shields.io/github/stars/Lightning-AI/litgpt.svg) ![Github forks](https://img.shields.io/github/forks/Lightning-AI/litgpt.svg) **highly recommended!**
     - well-structured documentation and support most English LLMs.
+- [alignment-handbook](https://github.com/huggingface/alignment-handbook) 
+    - well-structured documentation and support Zephyr series.
 - [Llama-Chinese](https://github.com/LlamaFamily/Llama-Chinese) ![Github stars](https://img.shields.io/github/stars/LlamaFamily/Llama-Chinese.svg) ![Github forks](https://img.shields.io/github/forks/LlamaFamily/Llama-Chinese.svg), [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) ![Github stars](https://img.shields.io/github/stars/ymcui/Chinese-LLaMA-Alpaca.svg) ![Github forks](https://img.shields.io/github/forks/ymcui/Chinese-LLaMA-Alpaca.svg), [Chinese-LLaMA-Alpaca-3](https://github.com/ymcui/Chinese-LLaMA-Alpaca-3) ![Github stars](https://img.shields.io/github/stars/ymcui/Chinese-LLaMA-Alpaca-3.svg) ![Github forks](https://img.shields.io/github/forks/ymcui/Chinese-LLaMA-Alpaca-3.svg)
     - well-structured documentation and support Llama series (chinese).
 
