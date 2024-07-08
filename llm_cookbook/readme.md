@@ -56,6 +56,13 @@ Knowledge based construction refer to [wisdomInterrogatory](https://github.com/z
 ![](https://github.com/yizhongw/self-instruct/raw/main/docs/pipeline.JPG)
 _image source: [Self-Instruct](https://github.com/yizhongw/self-instruct)_
 
+### Tools
+1. [marker: Convert PDF to markdown quickly with high accuracy](https://github.com/VikParuchuri/marker)
+2. [Awesome-LLMs-Datasets](https://github.com/lmmlzn/Awesome-LLMs-Datasets)
+3. [LLM Datasets: High-quality datasets, tools, and concepts for LLM fine-tuning](https://github.com/mlabonne/llm-datasets)
+4. [NeMo-Curator Public: Scalable toolkit for data curation](https://github.com/NVIDIA/NeMo-Curator?tab=readme-ov-file) **Highly recommended!**
+5. [Data-Juicer: A One-Stop Data Processing System for Large Language Models](https://github.com/modelscope/data-juicer) **Higly recommended!**
+
 ## Learn domain knowledge via pretrain
 
 Pretrain aims to learn common knowledge and trains LLM in a next-word prediction task.
