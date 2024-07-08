@@ -17,6 +17,7 @@ This repository is the official codebase for the [blog](https://jason-cs18.githu
     - [ ] LLM and MLLM
     - [ ] Diffusion and its variants
     - [ ] CLIP and its variants
+- [ ] CUDA Programming
 - [x] Engineering Tools
     - [x] [Web scraper](https://jason-cs18.github.io/ml-engineering/web_scraper.html)
     - [x] [Web development with FastAPI](https://jason-cs18.github.io/ml-engineering/fastapi.html)
