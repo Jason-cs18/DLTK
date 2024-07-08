@@ -47,9 +47,9 @@ Although a lot of LLMs are released, we only focus on open-source codebases whic
 
 Knowledge based construction refer to [wisdomInterrogatory](https://github.com/zhihaiLLM/wisdomInterrogatory). Diversity is a key for pre-training.
 
-- Pretrain / Continual Pretrain (~1M): domain-specific data (30%-40%) + opensource data (60%-70%).
-- Supervised Fine-tuning (~50K): domain-specific (100%).
-- Reinforcement Learning (RLHF) (~50K): domain-specific (100%).
+- Pretrain / Continual Pretrain (1M~5M tokens): domain-specific data (30%-40%) + opensource data (60%-70%).
+- Supervised Fine-tuning (~50K instruction-question-answer): domain-specific (100%).
+- Reinforcement Learning (~50K instruction-question-answer): domain-specific (100%).
 
 > _Note: domain-specific data of the 2nd and 3rd stages are instruction data which consists of task description, question and answer. It is created by human experts or LLM itself. If you want to build instructuon data with GPT4, please refer to [Self-Instruct](https://github.com/yizhongw/self-instruct)._
 
@@ -58,10 +58,11 @@ _image source: [Self-Instruct](https://github.com/yizhongw/self-instruct)_
 
 ### Tools
 1. [marker: Convert PDF to markdown quickly with high accuracy](https://github.com/VikParuchuri/marker)
-2. [Awesome-LLMs-Datasets](https://github.com/lmmlzn/Awesome-LLMs-Datasets)
-3. [LLM Datasets: High-quality datasets, tools, and concepts for LLM fine-tuning](https://github.com/mlabonne/llm-datasets)
-4. [NeMo-Curator Public: Scalable toolkit for data curation](https://github.com/NVIDIA/NeMo-Curator?tab=readme-ov-file) **Highly recommended!**
-5. [Data-Juicer: A One-Stop Data Processing System for Large Language Models](https://github.com/modelscope/data-juicer) **Higly recommended!**
+2. [token count: counts the number of tokens in a text string, file, or directory](https://github.com/felvin-search/token-count)
+3. [Awesome-LLMs-Datasets](https://github.com/lmmlzn/Awesome-LLMs-Datasets)
+4. [LLM Datasets: High-quality datasets, tools, and concepts for LLM fine-tuning](https://github.com/mlabonne/llm-datasets)
+5. [NeMo-Curator Public: Scalable toolkit for data curation](https://github.com/NVIDIA/NeMo-Curator?tab=readme-ov-file) **Highly recommended!**
+6. [Data-Juicer: A One-Stop Data Processing System for Large Language Models](https://github.com/modelscope/data-juicer) **Higly recommended!**
 
 ## Learn domain knowledge via pretrain
 
