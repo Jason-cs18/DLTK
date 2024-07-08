@@ -103,3 +103,4 @@ A single LLM only acts as a chatbot and answers user questions. To make LLM user
 ### Practice
 1. [Build an agent with LangChain](https://python.langchain.com/v0.1/docs/modules/agents/), LangChain
 2. [Berkeley Function Calling Leaderboard](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard), UC Berkeley
+3. [Build Multi-Agent Applications with AutoGen](https://microsoft.github.io/autogen/docs/Getting-Started/), Microsoft
