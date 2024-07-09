@@ -56,6 +56,29 @@ Knowledge based construction refer to [wisdomInterrogatory](https://github.com/z
 ![](https://github.com/yizhongw/self-instruct/raw/main/docs/pipeline.JPG)
 _image source: [Self-Instruct](https://github.com/yizhongw/self-instruct)_
 
+### Knowledge Graph
+> Why knowledge graph is important? 
+> LLMs are often synthesis factual errors due to hallucination. It is because that LLMs lacks real-world understanding. To insert real-world knowledge into LLMs, knowledge graph is a good choice since it can organizes raw text data (e.g., xxx PDFs) to a easy-to-query and easy-to-understand format.
+
+**An standard pipepline to integrate knowledge graph with LLM**
+
+1. Build a automated knowledge graph from raw text data.
+2. Build a simple QA with the created knowledge graph.
+3. Integrated knowledge graph with LLM QA pipeline
+
+![](https://github.com/Xu1Aan/KGExplorer/raw/main/asset/%E6%A8%A1%E5%9E%8B%E6%A1%86%E6%9E%B6.png)
+*image source: [KGExplorer](https://github.com/Xu1Aan/KGExplorer)*
+
+Although creating a knowledge graph usually involves specialized and complex tasks, we can leverage LLM to build it automatically.
+
+- [Knowledge Graphs Guides in LlamaIndex](https://docs.llamaindex.ai/en/stable/understanding/putting_it_all_together/graphs/)
+- [Building a Knowledge Graph with LlamaIndex](https://siwei.io/graph-enabled-llama-index/knowledge_graph_query_engine.html)
+- [Knowledge Graph Index](https://docs.llamaindex.ai/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphDemo/)
+- [Knowledge Graph Query Engine](https://docs.llamaindex.ai/en/stable/examples/query_engine/knowledge_graph_query_engine/#step-1-load-data-from-wikipedia-for-guardians-of-the-galaxy-vol-3)
+
+![](https://github.com/siwei-io/talks/assets/1651790/495e035e-7975-4b77-987a-26f8e1d763d2)
+_image source: [Knowledge Graph Building with LLM](https://colab.research.google.com/drive/1tLjOg2ZQuIClfuWrAC2LdiZHCov8oUbs)_
+
 ### Tools
 1. [marker: Convert PDF to markdown quickly with high accuracy](https://github.com/VikParuchuri/marker)
 2. [token count: counts the number of tokens in a text string, file, or directory](https://github.com/felvin-search/token-count)
