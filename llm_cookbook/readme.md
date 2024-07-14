@@ -89,6 +89,7 @@ _image source: [Knowledge Graph Building with LLM](https://colab.research.google
 4. [LLM Datasets: High-quality datasets, tools, and concepts for LLM fine-tuning](https://github.com/mlabonne/llm-datasets)
 5. [NeMo-Curator Public: Scalable toolkit for data curation](https://github.com/NVIDIA/NeMo-Curator?tab=readme-ov-file) **Highly recommended!**
 6. [Data-Juicer: A One-Stop Data Processing System for Large Language Models](https://github.com/modelscope/data-juicer) **Higly recommended!**
+7. [QAnything: Question and Answer based on Anything](https://github.com/netease-youdao/QAnything) **Highly recommended!**
 
 ## Learn domain knowledge via pretrain
 
