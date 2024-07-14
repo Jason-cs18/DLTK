@@ -69,7 +69,7 @@ _image source: [Self-Instruct](https://github.com/yizhongw/self-instruct)_
 3. Integrated knowledge graph with LLM QA pipeline
 
 ![](https://github.com/Xu1Aan/KGExplorer/raw/main/asset/%E6%A8%A1%E5%9E%8B%E6%A1%86%E6%9E%B6.png)
-*image source: [KGExplorer](https://github.com/Xu1Aan/KGExplorer)*
+*image source: [KGExplorer (Chinese)](https://github.com/Xu1Aan/KGExplorer)*
 
 Although creating a knowledge graph usually involves specialized and complex tasks, we can leverage LLM to build it automatically.
 
@@ -77,6 +77,7 @@ Although creating a knowledge graph usually involves specialized and complex tas
 - [Building a Knowledge Graph with LlamaIndex](https://siwei.io/graph-enabled-llama-index/knowledge_graph_query_engine.html)
 - [Knowledge Graph Index](https://docs.llamaindex.ai/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphDemo/)
 - [Knowledge Graph Query Engine](https://docs.llamaindex.ai/en/stable/examples/query_engine/knowledge_graph_query_engine/#step-1-load-data-from-wikipedia-for-guardians-of-the-galaxy-vol-3)
+- [Build a Knowledge Graph with LlamaParse and integrate with RAG pipeline (Chinese)](https://segmentfault.com/a/1190000044890510)
 
 ![](https://github.com/siwei-io/talks/assets/1651790/495e035e-7975-4b77-987a-26f8e1d763d2)
 _image source: [Knowledge Graph Building with LLM](https://colab.research.google.com/drive/1tLjOg2ZQuIClfuWrAC2LdiZHCov8oUbs)_
