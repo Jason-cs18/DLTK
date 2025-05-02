@@ -7,7 +7,7 @@ A hands-on tutorial for developing deep learning models efficiently.
 - [ ] Deep learning [model deployment](https://github.com/Jason-cs18/DLTK/tree/main/model_deployment): model optimization, inference server.
   - [ ] LLM optimizations: vLLM, SGLang, TensorRT-LLM.
   - [ ] Diffusion optimizations: diffusers, OneDiff.
-- [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/model_demo) for deep learning models: Gradio, Streamlit, Vue.js.
+- [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/web_demo) for deep learning models: Gradio, Streamlit, Vue.js.
 
 ## Useful Links
 If you wish to publish your work on open-source community, the following resources are much helpful.
