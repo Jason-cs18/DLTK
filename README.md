@@ -1,9 +1,9 @@
 # DLTK
 A hands-on tutorial for developing deep learning models efficiently.
 
-- [ ] Deep learning model development: model design, model training & evaluation.
-- [ ] Deep learning model deployment: model optimization, inference server.
-- [ ] An interactive demo for deep learning models: Gradio, Streamlit, Vue.js.
+- [ ] Deep learning [model development](https://github.com/Jason-cs18/DLTK/tree/main/model_development): model design, model training & evaluation.
+- [ ] Deep learning [model deployment](https://github.com/Jason-cs18/DLTK/tree/main/model_deployment): model optimization, inference server.
+- [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/model_demo) for deep learning models: Gradio, Streamlit, Vue.js.
 
 ## Useful Links
 1. Lightning-AI. "[Deep Learning Project Template (Code)](https://github.com/Lightning-AI/deep-learning-project-template)". Github repo.
