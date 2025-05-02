@@ -1,3 +1,0 @@
-model_id: runwayml/stable-diffusion-v1-5
-inference_engine: pytorch
-text_prompt: stained glass of darth vader, backlight, centered composition, masterpiece, photorealistic, 8k
