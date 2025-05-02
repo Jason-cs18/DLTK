@@ -2,7 +2,11 @@
 A hands-on tutorial for developing deep learning models efficiently.
 
 - [ ] Deep learning [model development](https://github.com/Jason-cs18/DLTK/tree/main/model_development): model design, model training & evaluation.
+  - [ ] LLM development: data curation, model pre-training, instruction fine-tuning, reinforcement-based alignment.
+  - [ ] Diffusion development: data curation, model pre-training, efficient fine-tuning.
 - [ ] Deep learning [model deployment](https://github.com/Jason-cs18/DLTK/tree/main/model_deployment): model optimization, inference server.
+  - [ ] LLM-specific optimizations: vLLM, SGLang, TensorRT-LLM.
+  - [ ] Diffusion optimizations: diffusers, OneDiff.
 - [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/model_demo) for deep learning models: Gradio, Streamlit, Vue.js.
 
 ## Useful Links
