@@ -1,5 +1,5 @@
 # DLTK
-A hands-on tutorial for developing deep learning models efficiently.
+A hands-on tutorial for efficiently developing and deploying deep learning models.
 
 - [ ] Deep learning [model development](https://github.com/Jason-cs18/DLTK/tree/main/model_development): model design, model training & evaluation.
   - [ ] LLM development: data curation, model pre-training, instruction fine-tuning, reinforcement-based alignment.
