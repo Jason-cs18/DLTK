@@ -1,0 +1,3 @@
+model: LitResNet18 
+trainer:
+  max_epochs: 10

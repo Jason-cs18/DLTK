@@ -1,0 +1,3 @@
+model: LitVisionTransformer 
+trainer:
+  max_epochs: 5
