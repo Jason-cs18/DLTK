@@ -71,4 +71,4 @@ tensorboard --logdir .
 
 
 ## NLP examples
-Because NLP community often uses [transformers](https://huggingface.co/docs/transformers/index) to share their models and datasets, we provide an [hands-on notebook]() to implement Lightning training logic with transformers.
+Because NLP community often uses [transformers](https://huggingface.co/docs/transformers/index) to share their models and datasets, we provide an [hands-on notebook (TBD)](https://github.com/Jason-cs18/DLTK/blob/main/model_development/transformers_extension.ipynb) to implement Lightning training logic with transformers.
