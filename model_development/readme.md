@@ -69,6 +69,9 @@ Visualize training logs
 tensorboard --logdir .
 ```
 
+## NLP Examples
 
-## NLP examples
-Because NLP community often uses [transformers](https://huggingface.co/docs/transformers/index) to share their models and datasets, we provide an [hands-on notebook (TBD)](https://github.com/Jason-cs18/DLTK/blob/main/model_development/transformers_extension.ipynb) to implement Lightning training logic with transformers.
+The NLP community frequently uses [Transformers](https://huggingface.co/docs/transformers/index) to share pre-trained models and datasets. To support this, we provide a [hands-on notebook](https://github.com/Jason-cs18/DLTK/blob/main/model_development/transformers_extension.ipynb) (TBD) that demonstrates how to implement Lightning training logic with Transformers.
+
+### Useful Links
+1. Lightning-AI. "[Finetune Hugging Face BERT with PyTorch Lightning](https://lightning.ai/lightning-ai/studios/finetune-hugging-face-bert-with-pytorch-lightning)". Tech blog.

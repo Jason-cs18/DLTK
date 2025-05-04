@@ -17,4 +17,4 @@ If you wish to publish your work on open-source community, the following resourc
 3. mintlify. "[The starter kit for your Mintlify docs (Product Spec)](https://github.com/mintlify/starter)". Github repo.
 
 ## Further Readings
-For insights into efficient on-device AIGC algorithms and systems, check out [my blogs](https://jason-cs18.github.io/mlsys/).
+For insights into efficient on-device AIGC algorithms and systems, check out [my blogs](yanlu.substack.com/).
