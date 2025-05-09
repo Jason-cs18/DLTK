@@ -7,8 +7,8 @@ _A hands-on tutorial for efficiently developing and deploying deep learning mode
 - [x] Deep learning [model deployment](https://github.com/Jason-cs18/DLTK/tree/main/model_deployment): model optimization, inference server.
   - [ ] LLM optimizations: vLLM, SGLang, TensorRT-LLM.
   - [ ] Diffusion optimizations: diffusers, OneDiff.
-- [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/web_demo) for deep learning models: Gradio, Streamlit, React.
 - [ ]  [Model optimizations](https://github.com/MLSysTeam/DLTK/tree/main/model_optimizations): hardware-aware optimizations, LLM-specific optimizations, Diffusion-specific optimizations.
+- [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/web_demo) for deep learning models: Gradio, Streamlit, React.
 
 ## Useful links
 If you wish to publish your work on open-source community, the following resources are much helpful.
