@@ -1,4 +1,5 @@
 # Model deployment
+_A hands-on tutorial for efficiently deploying deep learning models. The topic includes inference engine, model profiling, and inference server. The goal is to provide a comprehensive guide for deploying deep learning models in production environments._
 
 ## Table of contents
 - [Model deployment](#model-deployment)
@@ -7,11 +8,9 @@
   - [Accelerate model with inference engine](#accelerate-model-with-inference-engine)
     - [ONNX test](#onnx-test)
     - [TensorRT test](#tensorrt-test)
-  - [Model optimization](#model-optimization)
-    - [Model profiling](#model-profiling)
-      - [PyTorch Profile](#pytorch-profile)
-      - [Nsight Systems](#nsight-systems)
-    - [Model compression (TBD)](#model-compression-tbd)
+  - [Model profiling](#model-profiling)
+    - [PyTorch Profile](#pytorch-profile)
+    - [Nsight Systems](#nsight-systems)
   - [Deploy models on inference server](#deploy-models-on-inference-server)
     - [Deploy TensorRT model with NVIDIA Triton](#deploy-tensorrt-model-with-nvidia-triton)
     - [Send request to Triton](#send-request-to-triton)
@@ -104,11 +103,9 @@ Explicitly deleting TensorRT engine object before script exit...
 Explicitly deleting TensorRT engine object before script exit...           
 ```
 
-## Model optimization
+## Model profiling
 
-### Model profiling
-
-#### PyTorch Profile
+### PyTorch Profile
 
 PyTorch profile is helpful to find the bottlenecks in your model. For example, the inference latency of ResNet50 on V100 GPU is `~208` ms and CPU operations take `~205` ms. Thus, this workload is memory bound where the GPU is waiting for the CPU to finish its operations. To optimize the model, we can use layer fusion, quantization, and other techniques to reduce the CPU operations.
 
@@ -116,7 +113,7 @@ PyTorch profile is helpful to find the bottlenecks in your model. For example, t
 python pytorch_profile.py
 ```
 
-#### Nsight Systems
+### Nsight Systems
 
 Nsight Systems provides a timeline view of the model execution. It shows the GPU and CPU utilization, memory usage, and other metrics. You can use it to identify the bottlenecks in your model and optimize it.
 
@@ -134,9 +131,6 @@ Test Nsight Systems on ResNet50
 ```bash
 nsys profile -w true -t cuda,nvtx,osrt,cudnn,cublas -s none -o nsight_report -f true -x true python nsys_profile.py
 ```
-
-### Model compression (TBD)
-TBD
 
 ## Deploy models on inference server
 

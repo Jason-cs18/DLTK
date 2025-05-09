@@ -1,6 +1,6 @@
 # Model development
 
-Using [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/starter/introduction.html) to efficiently train image classification models, enabling modular deep learning projects and easy experimentation through configurable settings.
+_Using [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/starter/introduction.html) to efficiently train image classification models, enabling modular deep learning projects and easy experimentation through configurable settings._
 
 ## Installation
 ```bash
