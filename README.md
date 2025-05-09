@@ -9,6 +9,7 @@ _A hands-on tutorial for efficiently developing and deploying deep learning mode
   - [ ] Diffusion optimizations: diffusers, OneDiff.
 - [ ]  [Model optimizations](https://github.com/MLSysTeam/DLTK/tree/main/model_optimizations): hardware-aware optimizations, LLM-specific optimizations, Diffusion-specific optimizations.
 - [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/web_demo) for deep learning models: Gradio, Streamlit, React.
+- [ ] [Multimodal understanding](https://github.com/Jason-cs18/DLTK/tree/main/multimodal_understanding): multimodal models, basic vision tasks, advanced vision tasks.
 
 ## Useful links
 If you wish to publish your work on open-source community, the following resources are much helpful.
