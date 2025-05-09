@@ -1,3 +1,4 @@
 model: LitVisionTransformer 
 trainer:
-  max_epochs: 5
+  max_epochs: 10
+  default_root_dir: ./logs/vit

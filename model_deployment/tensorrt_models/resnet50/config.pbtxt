@@ -1,0 +1,19 @@
+name: "resnet50"
+platform: "tensorrt_plan"
+max_batch_size: 128
+input [
+  {
+    name: "input_image"
+    data_type: TYPE_FP16
+    format: FORMAT_NCHW
+    dims: [1, 28, 28]
+  }
+]
+output [
+  {
+    name: "output_predictions"
+    data_type: TYPE_FP16
+    dims: [10]
+  }
+]
+

@@ -33,13 +33,15 @@ Modify configs for your needs
 model: LitResNet18 
 trainer:
   max_epochs: 10
+  default_root_dir: ./logs/resnet
 ```
 
 ```yaml
 # ./config/vit.yaml
 model: LitVisionTransformer 
 trainer:
-  max_epochs: 5
+  max_epochs: 10
+  default_root_dir: ./logs/vit
 ```
 
 Print training configs
@@ -60,7 +62,17 @@ python -W ignore main.py fit --config configs/vit.yaml
 Test your model
 
 ```bash
-python -W ignore main.py test --model=LitResNet18 --ckpt_path xxx
+# test a pre-trained resnet18 on MNIST
+python -W ignore main.py test --config configs/resnet.yaml --ckpt_path xxx
+# after running the above command, you will see the following output
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test_acc            0.9890000224113464
+        test_loss           0.03381314501166344
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+# test a pre-trained vision transformer on MNIST
+python -W ignore main.py test --config configs/vit.yaml --ckpt_path xxx
 ```
 
 Visualize training logs

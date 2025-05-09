@@ -1,3 +1,0 @@
-# Model compression
-
-xx

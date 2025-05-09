@@ -1,11 +1,83 @@
 import os
 import torch
 from torch import optim, nn
-from torchvision.models import resnet18
+from torchvision.models import resnet18, resnet50
 from torchvision.transforms import Resize, Grayscale
 from timm import create_model  # Use timm for pre-trained Vision
 import lightning as L
 from torch.nn import functional as F
+# import torch_tensorrt
+
+# Define resnet18 model with PyTorch
+class TorchResNet18(nn.Module):
+    def __init__(self, num_classes=10):
+        super().__init__()
+        # Load ResNet18 and modify the input/output layers for MNIST
+        self.model = resnet18(pretrained=True)
+        self.model.conv1 = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)  # Adjust for single-channel input
+        self.model.fc = nn.Linear(self.model.fc.in_features, num_classes)  # Adjust for MNIST classes
+        
+    def forward(self, x):
+        return self.model(x)
+
+# Define the LightningModule for ResNet18
+class LitResNet50(L.LightningModule):
+    def __init__(self, num_classes=10):
+        super().__init__()
+        # Load ResNet50 and modify the input/output layers for MNIST
+        self.model = resnet50(pretrained=True)
+        self.model.conv1 = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)  # Adjust for single-channel input
+        self.model.fc = nn.Linear(self.model.fc.in_features, num_classes)  # Adjust for MNIST classes
+
+    # use torch.compile(self.model) to accelerate the model
+    # def configure_model(self):
+    #     if self.model is not None:
+    #         return
+        
+        # self.model = torch.compile(
+        #     model,
+        #     backend="torch_tensorrt",
+        #     options={
+        #         "inputs": [torch_tensorrt.Input((1, 3, 224, 224))],  # Specify input shape
+        #         "enabled_precisions": {torch.float32},  # Use FP32 precision (or FP16 for faster inference)
+        #     }
+        # )
+    
+    def forward(self, x):
+        return self.model(x)
+
+    def training_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self(x)
+        loss = nn.CrossEntropyLoss()(y_hat, y)
+        self.log("train_loss", loss)
+        return loss
+
+    def validation_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self(x)
+        loss = nn.CrossEntropyLoss()(y_hat, y)
+        acc = (y_hat.argmax(dim=1) == y).float().mean()
+        self.log("val_loss", loss, prog_bar=True)
+        self.log("val_acc", acc, prog_bar=True)
+        return loss
+
+    def test_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self(x)
+        loss = nn.CrossEntropyLoss()(y_hat, y)
+        acc = (y_hat.argmax(dim=1) == y).float().mean()
+        self.log("test_loss", loss)
+        self.log("test_acc", acc)
+        return loss
+    
+    def predict_step(self, batch, batch_idx, dataloader_idx=0):
+        x, y = batch
+        return self(x)
+    
+    def configure_optimizers(self):
+        optimizer = optim.Adam(self.parameters(), lr=1e-3)
+        return optimizer
 
 # Define the LightningModule for ResNet18
 class LitResNet18(L.LightningModule):
@@ -16,6 +88,20 @@ class LitResNet18(L.LightningModule):
         self.model.conv1 = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)  # Adjust for single-channel input
         self.model.fc = nn.Linear(self.model.fc.in_features, num_classes)  # Adjust for MNIST classes
 
+    # use torch.compile(self.model) to accelerate the model
+    # def configure_model(self):
+    #     if self.model is not None:
+    #         return
+        
+        # self.model = torch.compile(
+        #     model,
+        #     backend="torch_tensorrt",
+        #     options={
+        #         "inputs": [torch_tensorrt.Input((1, 3, 224, 224))],  # Specify input shape
+        #         "enabled_precisions": {torch.float32},  # Use FP32 precision (or FP16 for faster inference)
+        #     }
+        # )
+    
     def forward(self, x):
         return self.model(x)
 
@@ -77,6 +163,13 @@ class LitVisionTransformer(L.LightningModule):
         self.resize = Resize((224, 224))
         # self.grayscale_to_rgb = Grayscale(num_output_channels=3) # Consider removing this
 
+    # use torch.compile(self.model) to accelerate the model
+    # def configure_model(self):
+    #     if self.model is not None:
+    #         return
+        
+    #     self.model = torch.compile(self.model)
+    
     def forward(self, x):
         # Apply model-specific preprocessing
         x = self.resize(x)

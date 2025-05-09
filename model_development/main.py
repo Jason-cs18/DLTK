@@ -3,6 +3,10 @@ from lightning.pytorch.cli import LightningCLI
 from models import LitResNet18, LitVisionTransformer
 from datasets import MNISTDataModule
 
+# import torch
+# torch.backends.cudnn.benchmark = False
+# torch.backends.cudnn.deterministic = True
+
 def cli_main():
     cli = LightningCLI(datamodule_class=MNISTDataModule)
 

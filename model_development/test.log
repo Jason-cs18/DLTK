@@ -1,0 +1,13 @@
+[00:25:10] Checking environments...                              speed_test.py:64
+           torch version: 2.2.2+cu118                            speed_test.py:65
+           CUDA available: True                                  speed_test.py:66
+           torchvision version: 0.17.2+cu118                     speed_test.py:67
+           torch_tensorrt version: 2.2.0+cu118                   speed_test.py:68
+           tensorrt version: 10.10.0.31                          speed_test.py:69
+           Running speed test (pytorch lightning)...             speed_test.py:70
+Batch size: 1, Average Latency: 1.53 ms
+Batch size: 8, Average Latency: 1.39 ms
+Batch size: 16, Average Latency: 1.47 ms
+Batch size: 32, Average Latency: 1.53 ms
+Batch size: 64, Average Latency: 1.52 ms
+[00:25:11] Latency results (torch-tensorrt)...                   speed_test.py:76
