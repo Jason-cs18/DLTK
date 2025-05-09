@@ -147,6 +147,13 @@ docker run --gpus=all --rm --net=host \
 -v /mnt/platform/code/DLTK/model_deployment/tensorrt_models:/models \
 nvcr.io/nvidia/tritonserver:23.03-py3 tritonserver --model-repository=/models
 
+# models directory structure
+./tensorrt_models/
+└── resnet50
+    ├── 1
+    │   └── model.plan # TensorRT engine file
+    └── config.pbtxt
+
 # If you want to use fp16 model, please use the outputIOFormats=fp16:chw and inputIOFormats=fp16:chw
 /usr/src/tensorrt/bin/trtexec --onnx=resnet18_dynamic_batch.onnx \
 --saveEngine=resnet50_engine_fp16.trt\

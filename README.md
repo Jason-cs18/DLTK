@@ -5,7 +5,7 @@ A hands-on tutorial for efficiently developing and deploying deep learning model
   - [ ] [Model compression](https://github.com/MLSysTeam/DLTK/tree/main/model_development/model_compression): quantization, pruning, distillation.
   - [ ] LLM development: data curation, model pre-training, instruction fine-tuning, reinforcement-based alignment.
   - [ ] Diffusion development: data curation, model pre-training, efficient fine-tuning.
-- [ ] Deep learning [model deployment](https://github.com/Jason-cs18/DLTK/tree/main/model_deployment): model optimization, inference server.
+- [x] Deep learning [model deployment](https://github.com/Jason-cs18/DLTK/tree/main/model_deployment): model optimization, inference server.
   - [ ] LLM optimizations: vLLM, SGLang, TensorRT-LLM.
   - [ ] Diffusion optimizations: diffusers, OneDiff.
 - [ ] An interactive [demo](https://github.com/Jason-cs18/DLTK/tree/main/web_demo) for deep learning models: Gradio, Streamlit, React.
