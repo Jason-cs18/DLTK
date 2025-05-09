@@ -14,7 +14,7 @@ console = Console()
 # Define a global TensorRT logger
 TRT_LOGGER = trt.Logger(trt.Logger.WARNING) # TensorRT 8.5.1.7
 
-def load_engine(engine_file_path):
+def load_engine(engine_file_path: str) -> trt.ICudaEngine:
     console.print(f"Loading TensorRT engine from: [cyan]{engine_file_path}[/cyan]...", style="bold blue")
     if not os.path.exists(engine_file_path):
         console.print(f"[bold red][ERROR] Engine file not found: {engine_file_path}[/bold red]")
@@ -33,8 +33,8 @@ def load_engine(engine_file_path):
         console.print_exception(show_locals=True)
         return None
 
-def profile_trt_engine(engine, batch_sizes, input_tensor_name, base_input_shape_chw,
-                       num_warmup_runs=20, num_timed_runs=100):
+def profile_trt_engine(engine: trt.ICudaEngine, batch_sizes: list, input_tensor_name: str, base_input_shape_chw: tuple,
+                       num_warmup_runs: int = 20, num_timed_runs: int = 100):
     latency_results_ms = {}
 
     # Create ONE execution context to be reused across different batch sizes

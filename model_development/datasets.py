@@ -1,3 +1,6 @@
+"""
+This module provides a PyTorch Lightning DataModule for the MNIST dataset.
+"""
 from torchvision.datasets import MNIST
 from torch.utils.data import DataLoader, random_split  # Added imports
 import lightning as L

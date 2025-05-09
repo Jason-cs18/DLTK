@@ -15,7 +15,7 @@ from onnxconverter_common import float16
 
 from models import TorchResNet18, LitResNet18, LitResNet50
 
-def profile_model_latency(model, batch_sizes, device="cuda"):
+def profile_model_latency(model: torch.nn.Module, batch_sizes: list, device: str ="cuda"):
     """
     Profiles the latency of a Lightning model (LitResNet18) for different batch sizes.
 
@@ -28,7 +28,7 @@ def profile_model_latency(model, batch_sizes, device="cuda"):
         dict: A dictionary with batch sizes as keys and average latency (ms) as values.
     """
     # Move the model to the specified device
-    model = model.cuda()
+    model = model.to(device)
     model.eval()
 
     # Dictionary to store latency results
@@ -37,7 +37,7 @@ def profile_model_latency(model, batch_sizes, device="cuda"):
     # Loop through each batch size
     for batch_size in batch_sizes:
         # Generate random input tensor
-        inputs = torch.randn(batch_size, 1, 28, 28).cuda()  # Adjusted for MNIST input size
+        inputs = torch.randn(batch_size, 1, 28, 28).to(device)  # Adjusted for MNIST input size
 
         # Warm-up runs (to stabilize GPU performance)
         for _ in range(5):
@@ -58,7 +58,7 @@ def profile_model_latency(model, batch_sizes, device="cuda"):
     return latency_results
 
 
-def profile_onnx_model_latency(onnx_model_path="resnet18.onnx", batch_sizes=[1], device="cuda"):
+def profile_onnx_model_latency(onnx_model_path: str ="resnet18.onnx", batch_sizes: list =[1], device: str ="cuda"):
     """
     Profiles the latency of an ONNX model for different batch sizes.
 
@@ -160,11 +160,11 @@ def profile_onnx_model_latency(onnx_model_path="resnet18.onnx", batch_sizes=[1],
 
 
 def profile_onnx_model_latency_with_gpu_input_binding(
-    onnx_model_path="resnet18.onnx",
-    batch_sizes=[1],
-    device="cuda",
-    num_warmup_runs=20,
-    num_timed_runs=100
+    onnx_model_path: str = "resnet18.onnx",
+    batch_sizes: list = [1],
+    device: str = "cuda",
+    num_warmup_runs: int = 20,
+    num_timed_runs: int = 100
 ):
     """
     Profiles the latency of an ONNX model for different batch sizes,
