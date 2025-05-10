@@ -44,4 +44,4 @@ This section will cover how LLMs can be utilized in customer support scenarios, 
 ## Best Practices
 - Workflow or agent?
 - From simple to complex.
-- Use MCP to manage tools.
+- Use MCP to manage
